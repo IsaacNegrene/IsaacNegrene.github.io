@@ -108,6 +108,24 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Harmonic Major Guitar Lines - Modern Linear Vocabulary Vol. 4","image":"https://www.modernlinearvocabulary.com/assets/web/capa-vol4-harmonic-major.jpg","description":"Study 20 harmonic-major guitar lines. This digital edition includes detailed tablature, chord voicings, slow video demonstrations, and audio at three speeds for a practical approach to modern jazz vocabulary and improvisation.","brand":{"@type":"Brand","name":"Modern Linear Vocabulary"},"author":{"@type":"Person","name":"Isaac Negrene"},"offers":[{"@type":"Offer","price":"32.00","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.modernlinearvocabulary.com/vol4/"},{"@type":"Offer","price":"150.00","priceCurrency":"BRL","availability":"https://schema.org/InStock","url":"https://www.modernlinearvocabulary.com/vol4/"}]}</script>
 
 </main>
+<section class="newsletter" id="subscribe">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Newsletter</span>
+      <h2>New lines in your inbox</h2>
+      <p class="muted">Be the first to know about new volumes, pre-sales and free study material. No spam, unsubscribe anytime.</p>
+    </div>
+    <form class="subscribe-form" data-ajax="nocors" action="https://3218c275.sibforms.com/serve/MUIFAIZ4EfDlkjGZkOMviuP7gZW6SxIF_Ivgx9o6T1mt3QAML1VgVTXG0FhxdJqWMeFtJb_IpA3naDMaofV_G0X-9aEk9LMd4LpxabL8-9KTADPdLJmhUv0a9jjGF_DPJ59z65FmsdFpKyY25LICvT8Sb41uBlMaoW7TgvWn_8jOAQcwrc2Eh6lcfsmro_Q476ma7LUT2Zzoge581A==" method="POST">
+      <input type="text" name="email_address_check" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="locale" value="en">
+      <input type="hidden" name="html_type" value="simple">
+      <label class="sr-only" for="nl-email-en">Email</label>
+      <input id="nl-email-en" name="EMAIL" type="email" required autocomplete="email" placeholder="Your email">
+      <button class="btn" type="submit">Subscribe</button>
+      <p class="form-status" role="status" aria-live="polite" data-ok="Done! Check your inbox to confirm." data-err="Something went wrong. Please try again."></p>
+    </form>
+  </div>
+</section>
 <footer class="site-footer">
   <div class="wrap">
     <span>© 2026 Isaac Negrene. All rights reserved.</span>
@@ -115,6 +133,26 @@
   </div>
 </footer>
 <script>
+window.MLV_NEWSLETTER = "https://3218c275.sibforms.com/serve/MUIFAIZ4EfDlkjGZkOMviuP7gZW6SxIF_Ivgx9o6T1mt3QAML1VgVTXG0FhxdJqWMeFtJb_IpA3naDMaofV_G0X-9aEk9LMd4LpxabL8-9KTADPdLJmhUv0a9jjGF_DPJ59z65FmsdFpKyY25LICvT8Sb41uBlMaoW7TgvWn_8jOAQcwrc2Eh6lcfsmro_Q476ma7LUT2Zzoge581A==";
+document.querySelectorAll('form[data-ajax]').forEach(function (f) {
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var st = f.querySelector('.form-status'), btn = f.querySelector('button[type=submit]');
+    var hp = f.querySelector('.hp'); if (hp && hp.value) return;
+    if (!f.getAttribute('action')) { st.textContent = st.dataset.err; st.className = 'form-status err'; return; }
+    btn.disabled = true;
+    var json = f.dataset.ajax === 'json';
+    var nl = f.querySelector('input[name=newsletter]');
+    if (nl && nl.checked && window.MLV_NEWSLETTER) {
+      var d = new FormData(); d.append('EMAIL', f.email.value); d.append('email_address_check', ''); d.append('locale', document.documentElement.lang.slice(0, 2)); d.append('html_type', 'simple');
+      fetch(window.MLV_NEWSLETTER, { method: 'POST', body: d, mode: 'no-cors' }).catch(function () {});
+    }
+    fetch(f.action, { method: 'POST', body: new FormData(f), mode: json ? 'cors' : 'no-cors', headers: json ? { 'Accept': 'application/json' } : {} })
+      .then(function (r) { if (json && !r.ok) throw 0; st.textContent = st.dataset.ok; st.className = 'form-status ok'; f.reset(); })
+      .catch(function () { st.textContent = st.dataset.err; st.className = 'form-status err'; })
+      .finally(function () { btn.disabled = false; });
+  });
+});
 document.querySelector('.menu-toggle').addEventListener('click', function () {
   var nav = document.getElementById('nav'); var open = nav.classList.toggle('open');
   this.setAttribute('aria-expanded', open); this.textContent = open ? 'Close' : 'Menu';
