@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.modernlinearvocabulary.com/</loc></url>
-  <url><loc>https://www.modernlinearvocabulary.com/vol1/</loc></url>
-  <url><loc>https://www.modernlinearvocabulary.com/vol2/</loc></url>
-  <url><loc>https://www.modernlinearvocabulary.com/vol3/</loc></url>
-  <url><loc>https://www.modernlinearvocabulary.com/vol4/</loc></url>
-  <url><loc>https://www.modernlinearvocabulary.com/workbook-vol1/</loc></url>
-  <url><loc>https://www.modernlinearvocabulary.com/shop/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/vol1/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/vol1/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/vol1/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/pt/vol1/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/vol1/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/vol1/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/vol2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/vol2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/vol2/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/pt/vol2/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/vol2/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/vol2/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/vol3/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/vol3/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/vol3/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/pt/vol3/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/vol3/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/vol3/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/vol4/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/vol4/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/vol4/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/pt/vol4/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/vol4/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/vol4/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/shop/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/shop/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/pt/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/shop/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/shop/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/workbook-vol1/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/workbook-vol1/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/workbook-vol1/"/>
+  </url>
+  <url>
+    <loc>https://www.modernlinearvocabulary.com/pt/workbook-vol1/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.modernlinearvocabulary.com/workbook-vol1/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.modernlinearvocabulary.com/pt/workbook-vol1/"/>
+  </url>
 </urlset>
