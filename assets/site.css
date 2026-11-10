@@ -266,3 +266,6 @@ form.contact-form { display: grid; gap: 14px; }
 .subscribe-form .form-status { grid-column: 1 / -1; }
 @media (max-width: 820px) { .newsletter .wrap { grid-template-columns: 1fr; gap: 24px; } }
 @media (max-width: 560px) { .contact-form .row2 { grid-template-columns: 1fr; } .subscribe-form { grid-template-columns: 1fr; } .subscribe-form .btn { width: 100%; } }
+.soon-box .btns { margin-top: 16px; }
+.soon-box .btn { color: #0c0d0f; }
+.soon-box .btn.ghost { color: var(--text); }
